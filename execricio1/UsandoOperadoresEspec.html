@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="UsandoOperadoresEspec.js"></script>
+</head>
+<body>
+    <script>
+        //-operador *condicional (?)
+        const age = 20;
+        const allowed = (age >= 16) ? "Permitido votar"
+        : "Não permitindo votar";
+        alert(allowed); //*permitido
+
+        // Operador virgula (,)
+        function x() {
+            return 'A';
+        }
+        function y() {
+            return 'B';
+        }
+        function z() {
+            return 'C';
+        }
+        var x = (x(), y(), z());
+        alert(x); //return C
+
+        var s = "";
+        for (var i = 0, j = 9; i <= 9; i++, j--){
+            s += ("[" + i + "][" + j + "]");
+        }
+        alert(s); // mostra i e J
+
+        //delete
+        const obj = { nome: "joao", 
+        endereco: "Av. Carlos Reinaldo Mendes", idade: 30};
+
+        alert(obj); // nao imprime no console.long(obj) ele imprime
+        alert(obj.nome, obj.endereco, obj.idade);
+        // so imprime nome
+
+        alert(JSON.stringify(obj)); // com o endereco
+        delete obj.endereco;
+        alert(JSON.stringify(obj)); // nao imprime o endereco 
+        
+        // in
+        const fruits = ['apple', 'banana', 'oranje'];
+        alert('banana' in fruits); //true
+        alert("length" in fruits); //true
+
+        //new
+        function Person(nome) {
+            this.name = name;
+        }
+        const john = new Person('john');
+        alert(john.name); //saida john
+
+        var objP = new Object();
+        objP.nomepessoa="Pedro"
+        alert(objP.nomepessoa); // saida Pedro 
+
+        //instaceof
+        alert(john instanceof Person); // TRUE
+
+        //THIS
+        function myFunc(){
+            alert(this);
+        }
+
+        myFunc(); // window
+
+        var obj1 = {
+            teste: function (){
+                return (this);
+            }
+        }
+
+        alert(obj1.teste()); //objects
+
+        //Typeof
+        var anObj = {job: "Sou um objeto!"};
+        var aNumber = 42;
+        var aString = {job: "Sou uma string!"};
+
+        Alert(typeof anObj); //irá imprimir "objeto"
+        Alert(typeof aNumber); //irá imprimir "number"
+        Alert(typeof aString); //irá imprimir "string"
+
+        // coalescência nula (??)
+        constdefaultValue = "Deafult Value";
+        const userImput = null;
+        const finalValue = userImput ?? defaultValue;
+        alert(finalValue); //Output: default value
+
+        const name="Mary";
+        alert(name??"name is null");
+
+    </script>
+</body>
+</html>

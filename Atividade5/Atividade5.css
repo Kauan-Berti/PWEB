@@ -1,0 +1,75 @@
+div {
+    text-align: center;
+    width: 500;
+    height: 500;
+   background-color: aqua;
+}
+
+
+
+/* Media queries/* 
+
+/*  Maior que 1920px */
+@media screen and (min-width: 1921px) {
+	
+
+	#caixa {
+		background-color: rgb(55, 228, 3);
+    }
+
+}
+/*  1920px ou menor */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+	
+
+	#caixa {
+		background-color: rgb(225, 158, 14);
+    }
+
+
+}
+
+/* 1366px ou menor  */
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+
+	#caixa {
+		background-color: rgb(136, 8, 195);
+    }
+
+}
+
+/* 1080px ou menor  */
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+
+	#caixa {
+		background-color: rgb(219, 11, 11);
+    }
+
+}
+
+/* 1024px ou menor  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+	#caixa {
+		background-color: rgb(250, 15, 172);
+    }
+
+}
+
+/* 768px ou menor  */
+@media screen and (min-width: 421px) and (max-width: 768px) {
+
+	#caixa {
+		background-color: rgb(223, 67, 0);
+    }
+
+}
+
+/* 420px ou menor  */
+@media screen and (min-width: 0px) and (max-width: 420px) {
+
+	#caixa {
+		background-color: rgb(6, 42, 186);
+    }
+
+}

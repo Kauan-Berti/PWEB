@@ -1,0 +1,18 @@
+
+.bodytext{
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #2bcaf6;
+    margin: auto;
+    margin-top: 500px;
+    width: 600px;
+    
+    /*border-bottom: #E9E9E9; para fazer a barra depois do titulo*/
+
+    box-shadow: 1px 3px 8px 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade14</title>
+</head>
+
+<body>
+    <input type="text" id="texto" size="60" maxlength="150">
+    <br>
+    <label>
+        <input type="checkbox" id="maiusculas" onclick="desabilita(this); transformaTexto()"> Transformar para
+        manusculas
+    </label>
+    <label>
+        <input type="checkbox" id="minusculas" onclick="desabilita(this); transformaTexto()"> Transformar para
+        minusculas
+    </label>
+    <script>
+        function transformaTexto() {
+            var texto = document.getElementById("texto").value;
+            if (document.getElementById("minusculas").checked) {
+                texto = texto.toLowerCase();
+            } else if (document.getElementById("maiusculas").checked) {
+                texto = texto.toUpperCase();
+            }
+            document.getElementById("texto").value = texto;
+        }
+
+        function desabilita(selectedCheckbox) {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                if (checkbox !== selectedCheckbox) {
+                    checkbox.checked = false;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

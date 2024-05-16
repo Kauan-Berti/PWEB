@@ -1,0 +1,79 @@
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.main-column {
+    flex: 2;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.article-content {
+    flex: 1;
+    /* This will make the content fill up the remaining space, and thus push the information bar at the bottom */
+}
+
+.nested-column {
+    flex: 2;
+}
+
+.first-article {
+    flex-direction: row;
+}
+
+.first-article .article-body {
+    flex: 1;
+}
+
+.first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 400px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .columns,
+    .column {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .first-article {
+        flex-direction: row;
+    }
+
+    .first-article .article-body {
+        flex: 1;
+    }
+
+    .first-article .article-image {
+        height: 300px;
+        order: 2;
+        padding-top: 0;
+        width: 400px;
+    }
+
+    .main-column {
+        flex: 3;
+    }
+
+    .nested-column {
+        flex: 2;
+    }
+}

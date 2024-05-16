@@ -1,0 +1,18 @@
+p {
+ color:blueviolet;
+ margin-right: 40px;  
+}
+
+#primeiro
+{
+     color: brown;   
+ }
+.segundo
+{
+    color :chartreuse;
+}
+img {
+    width:200px;
+    height:200px;
+    float:right;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var funcionario1 = new Object();
+        funcionario1.matricula = "00001234";
+        funcionario1.nome = "Kaike";
+        funcionario1.função = "programador";
+
+        alert(`ra=$(funcionario1.matricula) nome=$(funcionario1.nome)`);
+        //---------------------------------------------------------------//
+        //literal
+        var funcionario1 = {
+            ra: "9867754321",
+            nome: "Filipe"
+        };
+        alert("matricula=" + funcionario1.ra + " nome=" +
+            funcionario1.nome);
+        //-------------------------------------------------------------------//
+        // usando função construtora
+        function funcionario(matricula, nome) {
+            this.matricula = matricula;
+            this.nome = nome;
+            this.MostraDados = function () {
+                return "matricula=" + this.ra + " nome=" +
+                    this.nome;
+            }
+        }
+        var funcionario4 = new funcionario("321", "Fernanda");
+        alert(funcionario4.MostraDados());
+        alert(funcionario4.nome);
+        //-----------------------------------------------------//
+        // função construtora sem parâmetros
+        function Funcionario2() {
+            var matricula; // ~encapsulado-escondido"
+            var nome;
+            this.setMatricula = function (value) {
+                this.Matricula = value;
+            }
+            this.getMatricula = function () {
+                return this.Matricula;
+            }
+            this.setNome = function (value) {
+                this.nome = value;
+            }
+            this.getNome = function () {
+                return this.nome
+            }
+        }
+        var funcionario8 = new Funcionario2();
+        funcionario8.setNome("Alexandre");
+        funcionario8.setMatricula("3684");
+        alert("matricula=" + funcionario8.getMatricula() + " nome=" +
+            funcionario8.getNome());
+    </script>
+</body>
+
+</html>
