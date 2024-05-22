@@ -1,16 +1,17 @@
 
 header {
-    background-color: #F5F5F5;
+    background-color: #2bcaf6;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 1);
-    color: white;
+    border-bottom: 2px solid #F5F5F5;
+    color: #f5f5f5;
     height: 50px;
+    Font-style: italic;
 }
 
 body {
-    background-color: rgb(209, 209, 209);
+    background-color: #2bcaf6;
     margin: 0;
     padding: 0;
 
@@ -20,11 +21,13 @@ h1 {
     margin: 0;
     padding: 10px 0;
     text-align: center;
+    Font-style: italic;
 }
 
 h2 {
     font-size: 28px;
     font-weight: 400;
+    Font-style: italic
 }
 
 * {
@@ -55,6 +58,7 @@ form {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    Font-style: italic
 }
 
 .nome {
@@ -63,10 +67,12 @@ form {
     width: 100%;
     padding: 0 20px;
     font-size: 21px;
+    Font-style: italic;
 }
 
 .nome label {
     margin-top: 10px;
+
 }
 
 .nome input,
@@ -74,7 +80,7 @@ form {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #F5F5F5;
     border-radius: 4px;
 }
 
@@ -116,24 +122,28 @@ form {
     margin: 0 10px;
     border: none;
     border-radius: 4px;
-    background-color: #4b4848;
-    color: white;
+    background-color: #F5F5F5;
+    color: #000000;
     cursor: pointer;
+    Font-style: italic;
 }
 
 .enviar:hover,
 .limpar:hover {
-    background-color: #5c3232;
+    background-color: #F5F5F5;
 }
 
 /* Responsividade */
 @media (max-width: 1366px) {
     h1 {
         font-size: 24px;
+        Font-style: italic;
+        
     }
 
     h2 {
         font-size: 24px;
+        Font-style: italic;
     }
 
     .nome input,
@@ -142,16 +152,19 @@ form {
     .enviar,
     .limpar {
         font-size: 14px;
+        Font-style: italic;
     }
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 20px;
+        Font-style: italic;
     }
 
     h2 {
         font-size: 20px;
+        Font-style: italic;
     }
 
     .nome input,
@@ -180,16 +193,20 @@ form {
     .limpar {
         width: 100%;
         margin: 10px 0;
+        Font-style: italic;
     }
 }
 
 @media (max-width: 470px) {
     h1 {
         font-size: 18px;
+        Font-style: italic;
     }
 
     h2 {
         font-size: 18px;
+        Font-style: italic;
+
     }
 
     .nome input,
@@ -198,5 +215,6 @@ form {
     .enviar,
     .limpar {
         font-size: 10px;
+        Font-style: italic;
     }
 }
